@@ -25,3 +25,17 @@ p{
   border-color: white;
   border-style: solid;
 }
+
+@media (max-width: 768px){
+    body{
+    height: 100vh !important;
+  }
+
+  p{
+    font-size: 2rem;
+  }
+
+  .verticalAlignment{
+    margin-top: 40vh !important;
+  }
+}
