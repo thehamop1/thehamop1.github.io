@@ -27,8 +27,9 @@ p{
 }
 
 @media (max-width: 768px){
-    body{
+  body{
     height: 100vh !important;
+    background-position: left !important;
   }
 
   p{
