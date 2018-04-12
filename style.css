@@ -10,9 +10,11 @@
 .navbar-inverse .a-unstyled:hover { color: #FFF; }
 .navbar-inverse .a-unstyled:active { color: #969696; }
 
+textarea{
+  height: 125px !important;
+  /* width: 100%; */
+}
 
 #profilePicture{
-  /* border-radius: 2%; */
   width: 100%;
-  /* height: 75%; */
 }
