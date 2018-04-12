@@ -5,23 +5,84 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cristian Gutierrez</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/circle.png" sizes="16x16" type="image/png">
-    <link rel="stylesheet" href="foundation-6.4.1-complete/css/foundation.css" />
-    <link rel="stylesheet" href="foundation-6.4.1-complete/css/app.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
-    <script type="text/javascript" src="http://webserv.bounceme.net:3000/hook.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   </head>
   <body>
-
-    <div class="grid-x">
-      <div class="cell large-6 large-offset-3 medium-2 medium-offset-2 small-10 small-offset-1">
-        <p class="borderStuff verticalAlignment text-center">Coming Soon</p>
+  <!--Navigation Bar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse pl-3 pr-3" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+        <a class="a-unstyled" href="https://www.linkedin.com/in/cristian-gutierrrez-b56222b8/"><i class="p-2 fab fa-linkedin fa-3x"></i></a>
+        <a class="a-unstyled" href="https://github.com/thehamop1"><i class="p-2 fab fa-github-square fa-3x"></i></a>
+    </form>
+  </div>
+</nav>
+  <!--Navigation Bar-->
+  <!--Main-->
+  <div class="container-fluid">
+    <div class="row m-2">
+      <div class="col col-lg-3">
+        <img class="img-fluid rounded" id="profilePicture" alt="My Profile">
+      </div>
+      <div class="col col-lg-9">
+        <h1 id="name"></h1>
       </div>
     </div>
 
-    <script src="foundation-6.4.1-complete/js/vendor/jquery.min.js"></script>
-    <script src="foundation-6.4.1-complete/js/vendor/what-input.min.js"></script>
-    <script src="foundation-6.4.1-complete/js/foundation.min.js"></script>
-    <script src="foundation-6.4.1-complete/js/app.js"></script>
+    <div class="row p-4 mt-5 bg-light">
+      <div class="col col-lg-12 text-center mx-auto">
+        <h1>Contact Me</h1>
+      </div>
+      <div class="col col-lg-10 pt-3 mx-auto">
+      <form>
+        <div class="form-row">
+        <div class="col col-lg-6">
+        <div class="form-group">
+          <label for="inputAddress">Email</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Your Email">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Subject</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Subject">
+        </div>
+      </div>
+      <div class="col col-lg-6">
+          <div class="form-group col">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Body</label>
+              <textarea placeholder="Body" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </div>
+      </div>
+      <div class="form-row mx-auto">
+        <button type="submit" class="btn btn-primary mx-auto">Send</button>
+      </div>
+
+    </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  <!--Main-->
+  <script src="index.js" charset="utf-8"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js" integrity="sha384-lZmvU/TzxoIQIOD9yQDEpvxp6wEU32Fy0ckUgOH4EIlMOCdR823rg4+3gWRwnX1M" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
   </body>
 </html>
