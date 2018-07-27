@@ -1,0 +1,22 @@
+{
+  "name": "basiclinkedlistjs",
+  "version": "1.0.0",
+  "description": "Just making a linked list",
+  "main": "test.js",
+  "scripts": {
+    "start": "node linkedlist.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thehamop1/basicLinkedListJs.git"
+  },
+  "keywords": [
+    "linkedList"
+  ],
+  "author": "cristian gutierrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thehamop1/basicLinkedListJs/issues"
+  },
+  "homepage": "https://github.com/thehamop1/basicLinkedListJs#readme"
+}
