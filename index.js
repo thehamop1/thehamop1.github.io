@@ -1,32 +1,34 @@
 var user;
-var profilePicture = document.getElementById("profilePicture");
-var userName = document.getElementById("name");
+var userData;
+var projects = [];
 
-
-function loadText() {
-  {
+function getData(url, variable, callback) {
     var xhr = new XMLHttpRequest();
-    console.log(xhr);
-
-    xhr.onload = function() {
+    xhr.onload = function(variable) {
       if (this.status == 200) {
-        user = JSON.parse(this.response);
-        // console.log(user);
+        data = JSON.parse(this.response);
+        variable = data;
+        callback(variable);
       }
-      console.log(user);
-      profilePicture.setAttribute('src',user.avatar_url);
-      userName.append(user.name);
     };
-
     xhr.onerror = function() {
       console.log("darn, not found");
     };
-
     xhr.open('GET', 'https://api.github.com/users/thehamop1', true);
-
     xhr.send();
-
-  }
 }
 
-loadText();
+function setUserData(user){
+  var profilePicture = document.getElementById("profilePicture");
+  var userName = document.getElementById("name");
+  profilePicture.setAttribute('src',user.avatar_url);
+  userName.append(user.name);
+}
+
+function setProjectsData(projectArray){
+  console.log("setProjectsData");
+  console.log(projectArray);
+}
+
+getData("https://api.github.com/users/thehamop1", userData, setUserData);
+// getData("https://api.github.com/thehamop1/repos", projects, setProjectsData);

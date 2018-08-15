@@ -12,9 +12,15 @@
 
 textarea{
   height: 125px !important;
-  /* width: 100%; */
 }
 
 #profilePicture{
   width: 100%;
+}
+
+.parallax{
+  background-image: url("img/Beach.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
 }
