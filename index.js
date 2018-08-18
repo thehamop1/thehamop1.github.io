@@ -26,27 +26,37 @@ function setUserData(user){
 }
 
 function setProjectsData(projectArray){
-  console.log(projectArray);
-  var projectDiv = document.getElementById("projectDiv");
-  var para = document.createElement("div");
-  var textDiv = document.createElement("div");
-  var link = document.createElement("a");
-  var image = document.createElement("img");
-  var h4 = document.createElement("h4");
-  var h4Link = document.createElement("a");
-
-
-  h4Link.innerHTML = projectArray.name;
-  h4Link.setAttribute("");
-  textDiv.setAttribute("class", "card-body");
-  image.setAttribute("class", "card-img-top");
-  image.setAttribute("src", "http://placehold.it/700x400");
-  link.setAttribute("href", projectArray[0].html_url);
-  para.setAttribute( 'class', 'card h-100');
-  link.appendChild(image);
-  para.appendChild(link);
-  projectDiv.appendChild(para);
-
+  // This function is not pretty i might come back and change it
+  for(let x=0;x<projectArray.length;x++){
+    var projectDiv = document.getElementById("projectDiv");
+    var containerDiv = document.createElement("div");
+    var para = document.createElement("div");
+    var image = document.createElement("img");
+    var textDiv = document.createElement("div");
+    var h4 = document.createElement("h4");
+    var link = document.createElement("a");
+    var h4Link = document.createElement("a");
+    var textBody = document.createElement("p");
+    h4Link.innerHTML = projectArray[x].name;
+    textBody.innerHTML = projectArray[x].description;
+    textBody.setAttribute("class", "card-text");
+    containerDiv.setAttribute("class", "col-lg-4 col-md-6 mb-3 mt-4");
+    h4Link.setAttribute("href", projectArray[x].html_url);
+    textDiv.setAttribute("class", "card-body");
+    image.setAttribute("class", "card-img-top");
+    image.setAttribute("src", "http://placehold.it/700x400");
+    link.setAttribute("href", projectArray[x].html_url);
+    para.setAttribute( 'class', 'card h-100');
+    h4.setAttribute("class", "card-title");
+    link.appendChild(image);
+    para.appendChild(link);
+    h4.append(h4Link);
+    textDiv.appendChild(h4);
+    para.appendChild(textDiv);
+    containerDiv.appendChild(para);
+    textDiv.appendChild(textBody);
+    projectDiv.appendChild(containerDiv);
+  }
 }
 
 getData("https://api.github.com/users/thehamop1", userData, setUserData);
