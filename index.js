@@ -28,6 +28,7 @@ function setUserData(user){
 function setProjectsData(projectArray){
   // This function is not pretty i might come back and change it
   for(let x=0;x<projectArray.length;x++){
+    console.log(projectArray[x]);
     var projectDiv = document.getElementById("projectDiv");
     var containerDiv = document.createElement("div");
     var para = document.createElement("div");
@@ -44,7 +45,7 @@ function setProjectsData(projectArray){
     h4Link.setAttribute("href", projectArray[x].html_url);
     textDiv.setAttribute("class", "card-body");
     image.setAttribute("class", "card-img-top");
-    image.setAttribute("src", "http://placehold.it/700x400");
+    image.setAttribute("src", projectArray[x].html_url + "/raw/master/cover.jpeg");
     link.setAttribute("href", projectArray[x].html_url);
     para.setAttribute( 'class', 'card h-100');
     h4.setAttribute("class", "card-title");
