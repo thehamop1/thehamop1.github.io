@@ -24,3 +24,27 @@ textarea{
   background-size: cover;
   background-position: 50% 50%;
 }
+
+.jumbotron{
+  background-image: url("img/jumbotron.jpg");
+  height: 91vh;
+  background-repeat: no-repeat, repeat;
+  background-position: bottom; /* Center the image */
+  color: black;
+  background-size: cover;
+}
+
+.align-vert{
+  position:absolute;
+  margin: auto;
+  top: 25%;
+  background-color: white;
+}
+
+
+.word-opacity{
+  opacity: 1;
+}
+.div-opacity{
+  opacity: 0.7;
+}
