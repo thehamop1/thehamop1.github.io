@@ -19,16 +19,14 @@ function getData(url, variable, callback) {
 }
 
 function setUserData(user){
-  var profilePicture = document.getElementById("profilePicture");
   var userName = document.getElementById("name");
-  profilePicture.setAttribute('src',user.avatar_url);
   userName.append(user.name);
 }
 
 function setProjectsData(projectArray){
   // This function is not pretty i might come back and change it
   for(let x=0;x<projectArray.length;x++){
-    console.log(projectArray[x]);
+    // console.log(projectArray[x]);
     var projectDiv = document.getElementById("projectDiv");
     var containerDiv = document.createElement("div");
     var para = document.createElement("div");
