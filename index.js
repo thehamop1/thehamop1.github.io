@@ -30,7 +30,7 @@ function setProjectsData(projectArray){
     var projectDiv = document.getElementById("projectDiv");
     var containerDiv = document.createElement("div");
     var para = document.createElement("div");
-    var image = document.createElement("img");
+    // var image = document.createElement("img");
     var textDiv = document.createElement("div");
     var h4 = document.createElement("h4");
     var link = document.createElement("a");
@@ -42,12 +42,12 @@ function setProjectsData(projectArray){
     containerDiv.setAttribute("class", "col-lg-4 col-md-6 mb-3 mt-4");
     h4Link.setAttribute("href", projectArray[x].html_url);
     textDiv.setAttribute("class", "card-body");
-    image.setAttribute("class", "card-img-top");
-    image.setAttribute("src", projectArray[x].html_url + "/raw/master/cover.jpeg");
+    // image.setAttribute("class", "card-img-top");
+    // image.setAttribute("src", projectArray[x].html_url + "/raw/master/cover.jpeg");
     link.setAttribute("href", projectArray[x].html_url);
     para.setAttribute( 'class', 'card h-100');
     h4.setAttribute("class", "card-title");
-    link.appendChild(image);
+    // link.appendChild(image);
     para.appendChild(link);
     h4.append(h4Link);
     textDiv.appendChild(h4);
